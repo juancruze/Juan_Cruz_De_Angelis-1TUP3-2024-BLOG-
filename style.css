@@ -35,7 +35,7 @@ header.cabe {
     flex-grow: 1;
     justify-content: space-between;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 
 .nav-menu ul {
@@ -74,17 +74,51 @@ header.cabe {
     font-size: 14px;
     border: 2px solid #000000;
     border-radius: 20px;
-    width: 200px;
+    width: 700px;
     transition: width 0.4s ease, transform 0.4s ease;
     transform-origin: right;
 }
 
 .search-bar input:focus {
-    width: 400px;
-    transform: translateX(-50px);
     outline: none;
 }
 
+.category-bar {
+    background-color: rgb(34, 34, 34);
+    padding: 10px 0;
+    text-align: center;
+}
+
+.category-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.category-bar ul li {
+    display: inline-block;
+}
+
+.category-bar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.category-bar ul li a {
+    color: whitesmoke;
+    font-size: 18px;
+    transition: font-size 0.25s ease;
+}
+
+.category-bar ul li a:hover {
+    color: #ff0000;
+    font-size: 25px;
+}
 
 .site-content {
     display: flex;
@@ -105,10 +139,6 @@ header.cabe {
     transition: transform 0.2s;
 }
 
-.post:hover {
-    transform: translateY(-5px);
-}
-
 .post img {
     width: 100%;
     height: 300px;
@@ -118,9 +148,12 @@ header.cabe {
 }
 
 .post h2 {
+    background-color: #000000;
+    border-radius: 30px;
+    text-align: center;
     margin-bottom: 15px;
     font-size: 24px;
-    color: #000000;
+    color: #f5f7fa
 }
 
 .post .date {
@@ -178,19 +211,24 @@ header.cabe {
 .sidebar {
     width: 25%;
     padding: 25px;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.253);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 40px;
+    max-height: 1650px; 
+    overflow-y: auto; 
 }
 
 .sidebar h2 {
+    padding: 15px;
     font-size: 22px;
     margin-bottom: 20px;
-    color: #000000;
+    background-color: black;
+    border-radius: 30px;
+    color: #f5f7fa
 }
 
 .sidebar ul {
-    list-style: none;
+    list-style: circle;
     padding-left: 20px;
 }
 
@@ -200,8 +238,8 @@ header.cabe {
 
 .sidebar ul li a {
     text-decoration: none;
-    color: #4a4e69;
-    font-weight: 500;
+    color: #000000;
+    font-weight: 800;
     transition: color 0.3s;
 }
 
